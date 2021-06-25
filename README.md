@@ -10,7 +10,6 @@ Aplicação web para publicação de textos, pensamentos e anotações dos profi
 - Autenticação com provedor terceiro (OAuth) Github
 - Integração com a plataforma de pagamento Stripe
 </br>
-</br>
 
 **Status** </br>
 Em andamento 
