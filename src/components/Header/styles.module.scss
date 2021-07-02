@@ -11,6 +11,10 @@
   display: flex;
   align-items: center;
 
+  .logo {
+    cursor: pointer;
+  }
+
   nav {
     margin-left: 7rem;
     height: 5rem;
