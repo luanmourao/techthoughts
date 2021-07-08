@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import logo from '../../../public/images/logo.svg';
 import styles from './styles.module.scss';
+import { ActiveLink } from '../ActiveLink';
 
 export function Header() {
 
@@ -18,8 +19,12 @@ export function Header() {
         </Link>
 
         <nav>
-          <a href="#" className={styles.active}>Home</a>
-          <a href="#">Posts</a>
+          <ActiveLink activeClassName={styles.active} href="/">
+            <a>Home</a>
+          </ActiveLink>
+          <ActiveLink activeClassName={styles.active} href="/posts" prefetch>
+            <a>Posts</a>
+          </ActiveLink>
         </nav>
 
         <SignInButton />
